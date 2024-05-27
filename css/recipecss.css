@@ -1,0 +1,670 @@
+/*RECIPE PAGE STYLING*/
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: "Open Sans", sans-serif;
+    color: black;
+}
+
+/*HIDES THE SCROLLABR*/
+::-webkit-scrollbar {
+    display: none;
+}
+
+/*NAVBAR*/
+.navcon2 {
+    background-color: black;
+    width: 100%;
+    height: 8.5rem;
+}
+
+.navbar2 {
+    width: 100%;
+    height: 3rem;
+    display: flex;
+    text-align: center;
+    color: white;
+    background-color: black;
+}
+
+.navbar2 ul {
+    display: flex;
+    list-style: none;
+    padding-top: 2rem;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    background-color: black;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 7rem;
+    text-align: center;
+    color: white;
+    background-color: black;
+}
+
+nav img {
+    align-items: left;
+    float: left;
+    margin: 2rem 5rem 0 5rem;
+}
+
+.navbar2 ul li {
+    padding-top: 1.8rem;
+    padding-right: 5rem;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    background-color: black;
+}
+
+.navbar2 ul li a {
+    color: white;
+    font-size: 1rem;
+    background-color: black;
+}
+
+.navbar2 ul li a:hover {
+    color: #79dcf1;
+    background-color: black;
+}
+
+.navbar2 button {
+    border: none;
+    background-color: black;
+}
+
+.navbar2 ul li button a {
+    border: 1px solid #79dcf1;
+    padding: 0.5rem 1rem;
+    border-radius: 1rem;
+    background-color: #79dcf1;
+    color: #0a0908;
+}
+
+.navbar2 ul li button a:hover {
+    color: white;
+    background-color: #088199;
+    border-color: #088199;
+    transition: 0.5s;
+}
+
+/*DISAPPEARING SEARCHBAR*/
+.searchbar {
+    display: flex;
+    cursor: pointer;
+    text-align: center;
+    font-size: 1rem;
+    width: 0;
+    margin: 0 0 2rem 14.5rem;
+    border: 2px solid #2b2d42;
+    background: #79dcf1;
+    border-radius: 2rem;
+    align-items: center;
+    transition: 0.5s;
+    transform-style: smooth;
+}
+
+.searchbar:hover {
+    width: 59.9rem;
+    border: none;
+}
+
+.searchbar:hover input {
+    width: 56rem;
+    border-radius: 2rem;
+    border: 2px solid #2b2d42;
+    font-size: 0.9rem;
+}
+
+.searchbar input {
+    width: 0;
+    outline: none;
+    border: none;
+    transition: 1s;
+    background: transparent;
+    font-size: 0.9rem;
+    padding: 0.7rem 0 0.7rem 1.5rem;
+}
+
+#searchicon {
+    color: black;
+    padding: 0 0 0 1rem;
+}
+
+.latest {
+    z-index: 1;
+    position: absolute;
+    text-align: center;
+    width: 100%;
+}
+
+.latest h1 {
+    padding: 5rem 0 0 0;
+    text-align: center;
+    font-size: 4rem;
+    align-items: center;
+    color: white;
+}
+
+/*IMAGE SLIDER*/
+.maincon {
+    z-index: -1;
+}
+
+.sliderwrap {
+    position: relative;
+    max-width: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.slider {
+    display: flex;
+    aspect-ratio: 15/3;
+    filter: linear-gradient(rgba(0, 0, 0, 0.574));
+    overflow: hidden;
+    box-shadow: 0 1.5rem 3rem -0.75rem hsla(0, 0%, 0%, 0.25);
+}
+
+.slider img {
+    flex: 0 0 100%;
+    object-fit: cover;
+    transition: all 0.5s ease;
+    height: 20rem;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 20rem;
+    background: rgba(0, 0, 0, 0.574);
+}
+
+.slider input {
+    display: none;
+}
+
+.slidernav {
+    display: flex;
+    justify-content: center;
+    margin: 0.5rem;
+}
+
+.slidernav label {
+    height: 0.8rem;
+    width: 0.8rem;
+    border-radius: 1rem;
+    border: 2px solid #2b2d42;
+    cursor: pointer;
+    transition: all 0.5s ease;
+    margin: 0.3rem;
+}
+
+.slidernav label:hover {
+    background: #79dcf1;
+}
+
+#img1:checked~.slide1 {
+    margin-left: 0;
+}
+
+#img2:checked~.slide2 {
+    margin-left: -100%;
+}
+
+#img3:checked~.slide3 {
+    margin-left: -200%;
+}
+
+#img4:checked~.slide4 {
+    margin-left: -300%;
+}
+
+#img5:checked~.slide5 {
+    margin-left: -400%;
+}
+
+/*RECIPES LIST IN GRID STYLE AGAIN*/
+.recipelist {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2.5rem;
+    justify-content: center;
+    margin: 0 5rem 3rem 5rem;
+}
+
+.recipe-item {
+    background: white;
+    border-radius: 1rem;
+    overflow: hidden;
+    box-shadow: 0 0.5rem 0.8rem rgba(0, 0, 0, 0.574);
+    transition: transform 2s;
+    width: 20rem;
+    position: relative;
+    display: none;
+}
+
+.recipe-item:hover {
+    transform: translateY(-1.5rem);
+}
+
+.recipe-item:nth-child(1),
+.recipe-item:nth-child(2),
+.recipe-item:nth-child(3),
+.recipe-item:nth-child(4),
+.recipe-item:nth-child(5),
+.recipe-item:nth-child(6) {
+    display: inline-block;
+}
+
+.recipe-item img {
+    width: 100%;
+    border-radius: 2rem;
+    padding: 1rem 1rem 0.5rem 1rem;
+    height: auto;
+}
+
+.recipeinfo {
+    padding: 0 1rem 1.5rem 1rem;
+    text-align: center;
+}
+
+.recipeinfo h2 {
+    font-size: 1.5rem;
+}
+
+.recipeinfo h2:hover {
+    color: #17B9DE;
+}
+
+.show-more-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1rem;
+}
+
+#showmore {
+    background-color: #79dcf1;
+    color: black;
+    padding: 1rem 2rem;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.2rem;
+    transition: background-color 0.3s;
+}
+
+#showmore:hover {
+    background-color: #17B9DE;
+}
+
+
+/*CONTACT US BOTTOM PART*/
+.bottom {
+    background-color: #0a0908;
+    margin-top: 6rem;
+    padding-bottom: 5rem;
+    display: flex;
+    justify-content: center;
+    color: white;
+}
+
+.bottom img {
+    width: 200px;
+    margin: 5rem 0 2rem 8rem;
+}
+
+form h1 {
+    font-size: 1.7rem;
+    margin-left: 8rem;
+    color: white;
+}
+
+.emailbox i {
+    color: #79dcf1;
+    margin: 0 0 0 8rem;
+    font-size: 1.4rem;
+}
+
+.emailbox input {
+    font-size: 1.1rem;
+    color: black;
+    padding: 0.35rem;
+    padding-right: 1rem;
+    border: none;
+    outline: none;
+    border-radius: 0.5rem;
+    margin: 0.5rem;
+}
+
+.emailbox button {
+    font-size: 1rem;
+    color: black;
+    border: none;
+    padding: 0.45rem;
+    cursor: pointer;
+    border-radius: 0.5rem;
+    background-color: #79dcf1;
+}
+
+.emailbox button:hover {
+    background-color: #088199;
+}
+
+.bottom p {
+    font-size: 0.8rem;
+    margin: 0.5rem 0 0 8rem;
+    color: white;
+}
+
+.bottom p a {
+    color: #79dcf1;
+}
+
+.bottom p a:hover {
+    color: #088199;
+}
+
+.bottom h1 {
+    margin: 1rem 0 1rem 8rem;
+}
+
+.bottom i {
+    font-size: 2rem;
+    color: #79dcf1;
+}
+
+#fb {
+    margin-left: 8rem;
+}
+
+#twt,
+#inst,
+#yt {
+    margin-left: 1.5rem;
+}
+
+#appstore {
+    float: right;
+    width: 200px;
+    margin-right: 7rem;
+    margin-top: 7rem;
+}
+
+#googleplay {
+    float: right;
+    width: 200px;
+    margin-top: 7rem;
+}
+
+.left p {
+    font-size: 1rem;
+    text-align: right;
+    margin-right: 7rem;
+}
+
+.left p:hover {
+    color: #79dcf1;
+}
+
+/*RESIZING SCREENS*/
+@media (max-width: 991px)
+/*SMALL SCREEN*/
+    {
+
+    /*NAVBAR*/
+    .navbar2 {
+        flex-direction: column;
+        height: auto;
+        align-items: center;
+        padding: 0 2rem;
+    }
+
+    .nav {
+        flex-direction: column;
+        margin-top: 1rem;
+    }
+
+    nav img {
+        width: 5rem;
+        margin: 0 auto;
+        padding: 2rem 0.3rem 0 0;
+    }
+
+    .navbar2 ul li {
+        padding-top: 0.5rem;
+        padding-right: 1rem;
+    }
+
+    .navbar ul li a {
+        font-size: 0.8rem;
+        margin: 1 auto;
+    }
+
+    /*search bar*/
+    .searchbar {
+        font-size: 1rem;
+        margin: 0 0 2rem 10rem;
+    }
+
+    .searchbar:hover {
+        width: 30rem;
+    }
+
+    .searchbar:hover input {
+        width: 27rem;
+        font-size: 0.9rem;
+    }
+
+    .searchbar input {
+        width: 0;
+        font-size: 0.9rem;
+        padding: 0.7rem 0 0.7rem 1.5rem;
+    }
+
+    #searchicon {
+        padding: 0 0 0 1rem;
+    }
+
+    .latest h1 {
+        padding: 4rem 0 0 0;
+        font-size: 4rem;
+    }
+
+    /*sliders*/
+    .maincon {
+        z-index: -1;
+    }
+
+    #appstore {
+        float: right;
+        width: 100px;
+        margin-right: 2rem;
+        margin-top: 7rem;
+    }
+
+    #googleplay {
+        float: right;
+        width: 130px;
+        margin-top: 7rem;
+        padding-right: 2rem;
+    }
+
+    .bottom img {
+        width: 150px;
+        margin: 5rem 0 2rem 8rem;
+    }
+
+    .emailbox input {
+        font-size: 0.8rem;
+        color: black;
+        padding: 0.35rem;
+        padding-right: 1rem;
+        border: none;
+        outline: none;
+        border-radius: 0.5rem;
+        margin: 0.5rem;
+        width: 5rem;
+    }
+
+    .emailbox button {
+        font-size: 0.8rem;
+        color: black;
+        border: none;
+        padding: 0.45rem;
+        cursor: pointer;
+        border-radius: 0.5rem;
+        background-color: #79dcf1;
+    }
+}
+
+@media (max-width: 768px)
+/*SMALLER SCREEN*/
+    {
+    .navbar2 ul li a {
+        font-size: 0.9rem;
+    }
+
+    /*search bar*/
+    .searchbar {
+        font-size: 1rem;
+        margin: 0 0 2rem 10rem;
+    }
+
+    .searchbar:hover {
+        width: 25rem;
+    }
+
+    .searchbar:hover input {
+        width: 22rem;
+        font-size: 0.9rem;
+    }
+
+    .searchbar input {
+        width: 0;
+        font-size: 0.9rem;
+        padding: 0.7rem 0 0.7rem 1.5rem;
+    }
+
+    #searchicon {
+        padding: 0 0 0 1rem;
+    }
+
+    .latest h1 {
+        padding: 2rem 0 0 0;
+        font-size: 4rem;
+    }
+}
+
+@media (max-width: 480px)
+/*SMALLEST SCREEN*/
+    {
+    .navbar2 ul li a {
+        font-size: 0.7rem;
+    }
+
+    /*search bar*/
+    .searchbar {
+        font-size: 1rem;
+        margin: 0 0 2rem 5rem;
+    }
+
+    .searchbar:hover {
+        width: 20rem;
+    }
+
+    .searchbar:hover input {
+        width: 17rem;
+        font-size: 0.9rem;
+    }
+
+    .searchbar input {
+        width: 0;
+        font-size: 0.9rem;
+        padding: 0.7rem 0 0.7rem 1.5rem;
+    }
+
+    #searchicon {
+        padding: 0 0 0 1rem;
+    }
+
+    .latest h1 {
+        padding: 0 0 0 0;
+        font-size: 3rem;
+    }
+
+    .bottom {
+        background-color: #0a0908;
+        padding-left: 6rem;
+        padding-bottom: 5rem;
+        display: flex;
+        justify-content: center;
+        color: white;
+        text-align: center;
+    }
+
+    #appstore {
+        display: none;
+    }
+
+    #googleplay {
+        align-items: right;
+        width: 80px;
+        padding-right: 5rem;
+        margin-top: 7rem;
+    }
+
+    .emailbox i {
+        color: #79dcf1;
+        font-size: 0.8rem;
+    }
+
+    .emailbox input {
+        font-size: 0.5rem;
+        color: black;
+        padding: 0.3rem;
+        border: none;
+        outline: none;
+        border-radius: 0.5rem;
+        width: 3rem;
+    }
+
+    .emailbox button {
+        font-size: 0.5rem;
+        color: black;
+        border: none;
+        padding: 0.3rem;
+        cursor: pointer;
+        border-radius: 0.5rem;
+        background-color: #79dcf1;
+    }
+
+    #fb {
+        padding-left: 0.5rem;
+        font-size: 0.5rem;
+    }
+
+    #twt,
+    #inst,
+    #yt {
+        padding-left: 0.5rem;
+        font-size: 0.5rem;
+    }
+
+    .left a img {
+        align-items: right;
+        display: flex;
+        justify-content: center;
+    }
+}
+/*THE END*/
+/*Y-Y*/

@@ -1,0 +1,689 @@
+/*ABOUT PAGE STYLING*/
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: "Open Sans", sans-serif;
+    color: black;
+}
+
+/*HIDES THE SCROLLABR*/
+::-webkit-scrollbar {
+    display: none;
+}
+
+/*NAVIGATION BAR*/
+.navcon2 {
+    background-color: black;
+    width: 100%;
+    height: 8.5rem;
+}
+
+.navbar2 {
+    width: 100%;
+    height: 3rem;
+    display: flex;
+    text-align: center;
+    color: white;
+    background-color: black;
+}
+
+.navbar2 ul {
+    display: flex;
+    list-style: none;
+    padding-top: 2rem;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    background-color: black;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 7rem;
+    text-align: center;
+    color: white;
+    background-color: black;
+}
+
+nav img {
+    align-items: left;
+    float: left;
+    margin: 2rem 5rem 0 5rem;
+}
+
+.navbar2 ul li {
+    padding-top: 1.8rem;
+    padding-right: 5rem;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    background-color: black;
+}
+
+.navbar2 ul li a {
+    color: white;
+    font-size: 1rem;
+    background-color: black;
+}
+
+.navbar2 ul li a:hover {
+    color: #79dcf1;
+    background-color: black;
+}
+
+.navbar2 button {
+    border: none;
+    background-color: black;
+}
+
+.navbar2 ul li button a {
+    border: 1px solid #79dcf1;
+    padding: 0.5rem 1rem;
+    border-radius: 1rem;
+    background-color: #79dcf1;
+    color: #0a0908;
+}
+
+.navbar2 ul li button a:hover {
+    color: white;
+    background-color: #088199;
+    border-color: #088199;
+    transition: 0.5s;
+}
+
+/*ABOUT PAGE*/
+/*WHO WE ARE?*/
+.about {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.about h1 {
+    font-size: 3rem;
+    text-align: center;
+    margin: 2rem 0 2rem 0;
+}
+
+.about img {
+    width: 45rem;
+    border-radius: 1rem;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.about p {
+    font-size: 1.2rem;
+    margin: 3rem 0 2rem 0;
+    display: block;
+    width: 50rem;
+    text-align: center;
+}
+
+.about h4 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin: 0 0 1rem 0;
+}
+
+.socials {
+    font-size: 2rem;
+    text-align: center;
+}
+
+.socials a i {
+    padding: 1rem 1rem 3rem;
+}
+
+.socials a i:hover {
+    color: #5ed5f0;
+    transform: translateY(-1rem);
+    transition: 0.5s ease-out;
+}
+
+/*SLIDING CARDS FOR THE PRODUCERS*/
+.producers h1 {
+    font-size: 2.5rem;
+    text-align: center;
+}
+
+.wrapper {
+    width: 100%;
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.con {
+    height: 20rem;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: start;
+}
+
+.card {
+    width: 3.5rem;
+    border-radius: 0.5rem;
+    background-size: cover;
+    cursor: pointer;
+    overflow: hidden;
+    border-radius: 2rem;
+    margin: 0 10px;
+    display: flex;
+    align-items: flex-end;
+    transition: .6s cubic-bezier(.28, -0.03, 0, .99);
+    box-shadow: 0.3rem 0.5rem 1rem rgba(0, 0, 0, 0.596);
+}
+
+.card>.row {
+    color: white;
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.card>.row>.icon {
+    background: #79dcf1;
+    color: black;
+    font-weight: 600;
+    border-radius: 50%;
+    width: 2rem;
+    height: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 15px;
+}
+
+.card>.row>.descrip {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    overflow: hidden;
+    height: 3.8rem;
+    opacity: 0;
+    background-color: #b3eaf7;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    transition: opacity .3s ease, transform .3s ease;
+}
+
+.descrip p {
+    color: black;
+    padding-top: 0.1rm;
+    font-size: 0.8rem;
+}
+
+.descrip p:hover {
+    color: #088199;
+}
+
+.descrip h4 {
+    text-transform: uppercase;
+    font-size: 1rem;
+}
+
+.descrip h5 {
+    color: black;
+    font-size: 0.8rem;
+    font-weight: 400;
+}
+
+input {
+    display: none;
+}
+
+input:checked+label {
+    width: 30rem;
+}
+
+input:checked+label .descrip {
+    opacity: 1 !important;
+    transform: translateY(0) !important;
+}
+
+.card[for="c1"] {
+    background-image: url("/img/marcus\ samuelsson.jpg");
+}
+
+.card[for="c2"] {
+    background-image: url("/img/Alexis\ Deboschnek.png");
+}
+
+.card[for="c3"] {
+    background-image: url("/img/Alix\ Traeger.png");
+}
+
+.card[for="c4"] {
+    background-image: url("/img/Claudette\ Zepeda-Wilkins.jpg");
+}
+
+.card[for="c5"] {
+    background-image: url("/img/JJ\ Johnson.jpg");
+}
+
+.card[for="c6"] {
+    background-image: url("/img/Alvin\ Zhou.jpg");
+}
+
+.card[for="c7"] {
+    background-image: url("/img/Kanchan\ Koya.jpg");
+}
+
+.card[for="c8"] {
+    background-image: url("/img/Rie\ Mcclenny.png");
+}
+
+.card[for="c9"] {
+    background-image: url("/img/Vaughn\ Vreeland.png");
+}
+
+/*BOTTOM*/
+.bottom {
+    background-color: #0a0908;
+    margin-top: 6rem;
+    padding-bottom: 5rem;
+    display: flex;
+    justify-content: center;
+    color: white;
+}
+
+.bottom img {
+    width: 200px;
+    margin: 5rem 0 2rem 8rem;
+}
+
+form h1 {
+    font-size: 1.7rem;
+    margin-left: 8rem;
+    color: white;
+}
+
+.emailbox i {
+    color: #79dcf1;
+    margin: 0 0 0 8rem;
+    font-size: 1.4rem;
+}
+
+.emailbox input {
+    font-size: 1.1rem;
+    color: black;
+    padding: 0.35rem;
+    padding-right: 1rem;
+    border: none;
+    outline: none;
+    border-radius: 0.5rem;
+    margin: 0.5rem;
+}
+
+.emailbox button {
+    font-size: 1rem;
+    color: black;
+    border: none;
+    padding: 0.45rem;
+    cursor: pointer;
+    border-radius: 0.5rem;
+    background-color: #79dcf1;
+}
+
+.emailbox button:hover {
+    background-color: #088199;
+}
+
+.bottom p {
+    font-size: 0.8rem;
+    margin: 0.5rem 0 0 8rem;
+    color: white;
+}
+
+.bottom p a {
+    color: #79dcf1;
+}
+
+.bottom p a:hover {
+    color: #088199;
+}
+
+.bottom h1 {
+    margin: 1rem 0 1rem 8rem;
+}
+
+.bottom i {
+    font-size: 2rem;
+    color: #79dcf1;
+}
+
+#fb {
+    margin-left: 8rem;
+}
+
+#twt,
+#inst,
+#yt {
+    margin-left: 1.5rem;
+}
+
+#appstore {
+    float: right;
+    width: 200px;
+    margin-right: 7rem;
+    margin-top: 7rem;
+}
+
+#googleplay {
+    float: right;
+    width: 200px;
+    margin-top: 7rem;
+    margin-right: 7rem;
+}
+
+.left p {
+    font-size: 1rem;
+    text-align: right;
+    margin-right: 7rem;
+}
+
+.left p:hover {
+    color: #79dcf1;
+}
+
+/*RESIZED SCREENS*/
+@media (max-width: 991px) /*SMALL SCREEN*/ {
+    /*NAVBAR*/
+    .navbar2 {
+        flex-direction: column;
+        height: auto;
+        align-items: center;
+        padding: 0 2rem;
+    }
+
+    .nav {
+        flex-direction: column;
+        margin-top: 1rem;
+    }
+
+    nav img {
+        width: 5rem;
+        margin: 0 auto;
+        padding: 2rem 0.3rem 0 0;
+    }
+
+    .navbar2 ul li {
+        padding-top: 0.5rem;
+        padding-right: 1rem;
+    }
+
+    .navbar ul li a {
+        font-size: 0.8rem;
+        margin: 1 auto;
+    }
+
+    /*ABOUT PAGE*/
+    /*WHO WE ARE?*/
+    .about h1 {
+        font-size: 2rem;
+        margin: 2rem 0 2rem 0;
+    }
+
+    .about img {
+        width: 30rem;
+    }
+
+    .about p {
+        font-size: 1rem;
+        margin: 3rem 0 2rem 0;
+        display: block;
+        width: 30rem;
+        text-align: justify;
+    }
+
+    .about h4 {
+        font-size: 1rem;
+    }
+
+    .socials {
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    /*SLIDING CARDS FOR THE PRODUCERS*/
+    .producers h1 {
+        font-size: 2.5rem;
+        text-align: center;
+    }
+
+    .con {
+        height: 15rem;
+    }
+
+    .card {
+        width: 2rem;
+        margin: 0 0.5rem;
+    }
+
+    .card>.row>.icon {
+        width: 1rem;
+        height: 1rem;
+    }
+
+    .descrip p {
+        color: black;
+        padding-top: 0.1rem;
+        font-size: 0.8rem;
+    }
+
+    .descrip h4 {
+        font-size: 0.8rem;
+    }
+
+    .descrip h5 {
+        color: black;
+        font-size: 0.8rem;
+        font-weight: 400;
+    }
+
+    /*BOTTOM*/
+    #appstore {
+        float: right;
+        width: 100px;
+        margin-right: 2rem;
+        margin-top: 7rem;
+    }
+
+    #googleplay {
+        float: right;
+        width: 130px;
+        margin-top: 7rem;
+        padding-right: 2rem;
+    }
+
+    .bottom img {
+        width: 150px;
+        margin: 5rem 0 2rem 8rem;
+    }
+
+    .emailbox input {
+        font-size: 0.8rem;
+        color: black;
+        padding: 0.35rem;
+        padding-right: 1rem;
+        border: none;
+        outline: none;
+        border-radius: 0.5rem;
+        margin: 0.5rem;
+        width: 5rem;
+    }
+
+    .emailbox button {
+        font-size: 0.8rem;
+        color: black;
+        border: none;
+        padding: 0.45rem;
+        cursor: pointer;
+        border-radius: 0.5rem;
+        background-color: #79dcf1;
+    }
+}
+
+@media (max-width: 768px)
+/*SMALLER SCREEN*/
+    {
+    .navbar2 ul li a {
+        font-size: 0.9rem;
+    }
+
+    /*SLIDING CARDS FOR THE PRODUCERS*/
+    .producers h1 {
+        font-size: 2.5rem;
+        text-align: center;
+    }
+
+    .con {
+        height: 15rem;
+        width: 100%;
+    }
+
+    .card {
+        width: 1rem;
+        margin: 0 0.5rem;
+    }
+
+    .card>.row>.icon {
+        width: 0.5rem;
+        height: 0.5rem;
+    }
+
+    .descrip p {
+        color: black;
+        padding-top: 0.1rem;
+        font-size: 0.5rem;
+    }
+
+    .descrip h4 {
+        font-size: 0.6rem;
+    }
+
+    .descrip h5 {
+        color: black;
+        font-size: 0.7rem;
+        font-weight: 400;
+    }
+}
+
+@media (max-width: 480px)
+/*SMALLEST SCREEN*/
+    {
+    .navbar2 ul li a {
+        font-size: 0.7rem;
+    }
+
+    /*SLIDING CARDS FOR THE PRODUCERS*/
+    .producers h1 {
+        font-size: 2.5rem;
+        text-align: center;
+    }
+
+    .con {
+        height: 15rem;
+        width: 100%;
+    }
+
+    .card {
+        width: 1rem;
+        margin: 0 0.5rem;
+    }
+
+    .card>.row>.icon {
+        width: 0.5rem;
+        height: 0.5rem;
+    }
+
+    .descrip p {
+        color: black;
+        padding-top: 0.1rem;
+        font-size: 0.5rem;
+    }
+
+    .descrip h4 {
+        font-size: 0.6rem;
+    }
+
+    .descrip h5 {
+        color: black;
+        font-size: 0.7rem;
+        font-weight: 400;
+    }
+
+    /*BOTTOM*/
+    .bottom {
+        background-color: #0a0908;
+        padding-left: 6rem;
+        padding-bottom: 5rem;
+        display: flex;
+        justify-content: center;
+        color: white;
+        text-align: center;
+    }
+
+    #appstore {
+        display: none;
+    }
+
+    #googleplay {
+        align-items: right;
+        width: 80px;
+        padding-right: 5rem;
+        margin-top: 7rem;
+    }
+
+    .emailbox i {
+        color: #79dcf1;
+        font-size: 0.8rem;
+    }
+
+    .emailbox input {
+        font-size: 0.5rem;
+        color: black;
+        padding: 0.3rem;
+        border: none;
+        outline: none;
+        border-radius: 0.5rem;
+        width: 3rem;
+    }
+
+    .emailbox button {
+        font-size: 0.5rem;
+        color: black;
+        border: none;
+        padding: 0.3rem;
+        cursor: pointer;
+        border-radius: 0.5rem;
+        background-color: #79dcf1;
+    }
+
+    #fb {
+        padding-left: 0.5rem;
+        font-size: 0.5rem;
+    }
+
+    #twt,
+    #inst,
+    #yt {
+        padding-left: 0.5rem;
+        font-size: 0.5rem;
+    }
+
+    .left a img {
+        align-items: right;
+        display: flex;
+        justify-content: center;
+    }
+}
+/*THE END*/

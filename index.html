@@ -1,0 +1,171 @@
+<!--START OF THE HTML-->
+<!DOCTYPE html>
+<html lang="en"><!--EN OFC-->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tasty | Home</title>
+    <link rel="stylesheet" href="style.css"><!--LINKING THE CSS-->
+    <link rel="icon" href="./img/tasty icon.png" type="img/x-icon"><!--WEB ICON-->
+    <!--FONT AWESONE ICONS-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <!--MAIN SECTION/ HOME PAGE--------------------------------------------------------------------------->
+    <section id="m.page">
+        <div class="hbg">
+            <!--VIDEO BACKGROUND-->
+            <video autoplay loop muted plays-inline class="bgvid">
+                <source src="img/bg.mp4" type="video/mp4">
+            </video>
+
+            <!--NAVBAR THAT LINKS TO DIFFERENT PAGES-->
+            <div class="navcon">
+                <div class="navbar">
+                    <nav>
+                        <div class="logo"><a href="#m.page"><img src="img/logo.png" alt="tasty logo" width="150px"
+                                    height="auto"></a></div>
+                        <ul>
+                            <!--6 PAGES IN TOTAL-->
+                            <li><a href="/index.html">Home</a></li>
+                            <li><a href="pages/recipepage.html">Recipes</a></li>
+                            <li><a href="pages/videospage.html">Videos</a></li>
+                            <li><a href="pages/newspage.html">News</a></li>
+                            <li><a href="pages/aboutpage.html">About</a></li>
+                            <li><button id="login"><a href="/pages/loginpage.html">Log In / Sign Up</a></button></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+
+            <!--MAIN PAGE TEXT WELCOMING TO THE WEBSITE------------------------------------------------>
+            <div class="header">
+                <h1>"Buzzfeed's making it Tasty"</h1>
+                <div class="subtitle">
+                    <p>Welcome to a world where every bite tells a story, <br>Welcome home to the heart of home-cooked
+                        cuisine.</p>
+                </div>
+                <div class="btn"><!--BUTTON TAT LINKS TO LOG IN PAGE CUS IT JUST SEEMS RIGHT-->
+                    <a href="pages/loginpage.html" class="lgcbtn">Let's get cooking!</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--INTRODUCTORY MESSAGE TO USERS-->
+    <section id="text">
+        <!--DISAPPEARING SEARCH BAR-->
+        <form action="">
+            <div class="searchbar">
+                <input type="text" placeholder="Search Recipe">
+                <i id="searchicon" class="fa-solid fa-magnifying-glass"></i>
+            </div>
+        </form>
+        <div class="subtext">
+            <div id="rightc">
+                <img src="img/fries.jpg" alt="fries">
+            </div>
+            <div id="leftc">
+                <h1>A Taste of Home in Every dish</h1>
+                <hr id="hr1">
+                <p>You can only have so many microwaveable instant meals before your tastebuds revolt.
+                    Whatever your level of skill in the kitchen, however busy you are. Tasty can help
+                    you in making delicious home-cooked meals become a part of your lifestyle.
+                    <br><br>
+                    Indulge in the flavors of tradition and creativity as you explore our treasure
+                    trove of recipes, each brimming with wholesome ingredients and the warmth of homemade goodness.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!--SELECTION GRID LEADING TO RECIPE PAGE---------------------------------------------------->
+    <section id="selection">
+        <div class="select">
+            <h2>What would you like to make?</h2>
+            <div class="bottomgrid">
+                <!--THEY ALL LEAD TO THE SAME PAGE--------------------------------------------
+                I HONESTLY WANTED TO ADD MORE PAGES------------------------------------------->
+                <a href="pages/recipepage.html"><img src="img/breakfast.jpg" alt="breakfast"></a>
+                <a href="pages/recipepage.html"><img src="img/lunch.jpg" alt="lunch"></a>
+                <a href="pages/recipepage.html"><img src="img/snacks.jpg" alt="snacks"></a>
+                <a href="pages/recipepage.html"><img src="img/Dinner.jpg" alt="dinner"></a>
+                <a href="pages/recipepage.html"><img src="img/desert.jpg" alt="desert"></a>
+                <a href="pages/recipepage.html">
+                    <p>Breakfast</p>
+                </a>
+                <a href="pages/recipepage.html">
+                    <p>Lunch</p>
+                </a>
+                <a href="pages/recipepage.html">
+                    <p>Snacks</p>
+                </a>
+                <a href="pages/recipepage.html">
+                    <p>Dinner</p>
+                </a>
+                <a href="pages/recipepage.html">
+                    <p>Desert</p>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!--BOTTOM PAGE WITH THE CONTACT AND ABOUT INFO OF THE WEBSITE------------------------------->
+    <section id="bottom">
+        <div class="bottom">
+            <!--FORM FOR THE NEWSLETTER-->
+            <form action="">
+                <img src="img/logo.png" alt="tasty logo">
+                <h1>
+                    Get the Tasty Newsletter
+                </h1>
+                <div class="emailbox"><!--ICONSS-->
+                    <i class="fa-solid fa-envelope"></i>
+                    <input type="email" placeholder="Enter your email">
+                    <button type="submit">Subscribe</button>
+                </div>
+                <!--OTHER SOCIAL DETAILS-->
+                <p>
+                    This site is protected by reCAPTCHA and <br>
+                    the Google <a href="https://policies.google.com/privacy" target="_blank">Privacy Policy</a> and <a
+                        href="https://policies.google.com/terms" target="_blank">Terms of Service</a> apply.
+                </p>
+                <br>
+                <h1>
+                    Follow Tasty
+                </h1>
+                <a href="https://www.facebook.com/buzzfeedtasty/" target="_blank"><i id="fb"
+                        class="fa-brands fa-facebook"></i></a>
+                <a href="https://twitter.com/tasty" target="_blank"><i id="twt" class="fa-brands fa-x-twitter"></i></a>
+                <a href="https://www.instagram.com/buzzfeedtasty" target="_blank"><i id="inst"
+                        class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.youtube.com/buzzfeedtasty" target="_blank"><i id="yt"
+                        class="fa-brands fa-youtube"></i></a>
+                <p>
+                    &copy; 2023 BuzzFeed, Inc <br>
+                    Redesign by: Aliah Mae Ortiz
+                </p>
+            </form>
+
+            <div class="left">
+                <a href="https://apps.apple.com/us/app/tasty-recipes-cooking-videos/id1217456898?itsct=apps_box_badge&itscg=30200"
+                    target="_blank">
+                    <img id="appstore" src="img/appstore.png" alt="download in app store">
+                </a>
+                <a href="https://play.google.com/store/apps/details?id=com.buzzfeed.tasty&pcampaignid=
+                pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1&pli=1"
+                    target="_blank">
+                    <img id="googleplay" src="img/gplay.png" alt="download on google play">
+                </a>
+            </div>
+        </div>
+    </section>
+    <!--END OF SECTION-->
+</body>
+
+</html>
+<!--PAGE 1 THE END-->

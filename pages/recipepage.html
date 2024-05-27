@@ -1,0 +1,600 @@
+<!--START OF THE HTML-->
+<!DOCTYPE html>
+<html lang="en"><!--ENGLISH OBV-->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tasty | Recipes</title>
+    <link rel="stylesheet" href="/css/recipecss.css"><!--CSS-->
+    <link rel="icon" href="/img/tasty icon.png" type="img/x-icon"><!--WEB ICON-->
+    <!--FONT AWESOME ICONS-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <!--RECIPE SECTION----------------------------------------------------------------------------->
+    <section id="recipe">
+        <!--NAVIGATION BAR-->
+        <div class="navcon2">
+            <div class="navbar2">
+                <nav>
+                    <div class="logo"><a href="/index.html"><img src="/img/logo.png" alt="tasty logo" width="150px"
+                                height="auto"></a></div>
+                    <ul>
+                        <li><a href="/index.html">Home</a></li>
+                        <li><a href="/pages/recipepage.html">Recipes</a></li>
+                        <li><a href="/pages/videospage.html">Videos</a></li>
+                        <li><a href="/pages/newspage.html">News</a></li>
+                        <li><a href="/pages/aboutpage.html">About</a></li>
+                        <li><button><a href="/pages/loginpage.html">Log In / Sign Up</a></button></li>
+                    </ul>
+                </nav>
+            </div>    
+        </div>
+
+        <!--START OF THE PAGE-->
+        <div class="latest">
+            <h1>Latest Recipes</h1>
+        </div>
+
+        <!--SEARCH BAR AND IMAGE SLIDER ------------------------------------------------------------------>
+        <div class="maincon">
+            <!--IMAGE SLIDER -->
+            <div class="sliderwrap">
+                <div class="slider">
+                    <input type="radio" name="slide" id="img1" checked>
+                    <input type="radio" name="slide" id="img2">
+                    <input type="radio" name="slide" id="img3">
+                    <input type="radio" name="slide" id="img4">
+                    <input type="radio" name="slide" id="img5">
+
+                    <div class="overlay"></div>
+
+                    <img class="slide1" src="/img/img1.jpg" alt="salmon with veggies">
+                    <img class="slide2" src="/img/img 2.jpg" alt="spaghetti">
+                    <img class="slide3" src="/img/img 3.jpg" alt="pancakes">
+                    <img class="slide4" src="/img/img4.jpg" alt="meat">
+                    <img class="slide5" src="/img/img5.jpg" alt="korean food">
+                </div>
+            </div>
+            <div class="slidernav">
+                <label for="img1"></label>
+                <label for="img2"></label>
+                <label for="img3"></label>
+                <label for="img4"></label>
+                <label for="img5"></label>
+            </div>
+            <!--DISAPPEARING SEARCH BAR-->
+            <form action="">
+                <div class="searchbar">
+                    <input type="text" placeholder="Search Recipe">
+                    <i id="searchicon" class="fa-solid fa-magnifying-glass"></i>
+                </div>
+            </form>
+        </div>
+
+        <!--RECIPE LIST IN GRID STYLE-->
+        <div class="recipelist">
+
+            <!--RECIPE 1-->
+            <div class="recipe-item">
+                <a href="https://tasty.co/recipe/thanksgiving-leftovers-shepherd-s-pie" target="_blank">
+                    <img src="/img/shepherds pie.jpg" alt="shepherds pie">
+                </a>
+                <div class="recipeinfo">
+                    <a href="https://tasty.co/recipe/thanksgiving-leftovers-shepherd-s-pie" target="_blank">
+                        <h2>Shepherd's Pie</h2>
+                    </a>
+                    <div class="rating">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                    </div>
+                    <p>
+                        <i class="fa-solid fa-heart"></i> 89%,
+                        <i class="fa-solid fa-clock"></i> 30 mins,
+                        <i class="fa-solid fa-drumstick-bite"></i> Non-vegan
+                    </p>
+                </div>
+            </div>
+
+            <!--RECIPE 2-->
+            <div class="recipe-item">
+                <a href="https://tasty.co/recipe/baked-butternut-squash-risotto" target="_blank">
+                    <img src="/img/risotto.jpg" alt="Baked Butternut Squash “Risotto”">
+                </a>
+                <div class="recipeinfo">
+                    <a href="https://tasty.co/recipe/baked-butternut-squash-risotto" target="_blank">
+                        <h2>Squash “Risotto”</h2>
+                    </a>
+                    <div class="rating">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                    </div>
+                    <p>
+                        <i class="fa-solid fa-heart"></i> 98%,
+                        <i class="fa-solid fa-clock"></i> 1 hr,
+                        <i class="fa-solid fa-leaf"></i> Vegan
+                    </p>
+                </div>
+            </div>
+
+            <!--RECIPE 3-->
+            <div class="recipe-item">
+                <a href="https://tasty.co/recipe/crunchy-avocado-tuna-wraps" target="_blank">
+                    <img src="/img/tuna wrap.jpg" alt="Avocado Tuna Wraps”">
+                </a>
+                <div class="recipeinfo">
+                    <a href="https://tasty.co/recipe/crunchy-avocado-tuna-wraps" target="_blank">
+                        <h2>Avocado Tuna Wraps</h2>
+                    </a>
+                    <div class="rating">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                    </div>
+                    <p>
+                        <i class="fa-solid fa-heart"></i> 95%,
+                        <i class="fa-solid fa-clock"></i> 30 mins,
+                        <i class="fa-solid fa-fish"></i> Seafood
+                    </p>
+                </div>
+            </div>
+
+            <!--RECIPE 4-->
+            <div class="recipe-item">
+                <a href="https://tasty.co/recipe/honey-bbq-chicken-wings" target="_blank">
+                    <img src="/img/Honey BBQ Chicken Wings Recipe by Tasty.jpg" alt="Honey BBQ Chicken Wings">
+                </a>
+                <div class="recipeinfo">
+                    <a href="https://tasty.co/recipe/honey-bbq-chicken-wings" target="_blank">
+                        <h2>Honey BBQ Chicken Wings</h2>
+                    </a>
+                    <div class="rating">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                    </div>
+                    <p>
+                        <i class="fa-solid fa-heart"></i> 93%,
+                        <i class="fa-solid fa-clock"></i> 1 hr 5 min,
+                        <i class="fa-solid fa-drumstick-bite"></i> Non-vegan
+                    </p>
+                </div>
+            </div>
+
+            <!--RECIPE 5-->
+            <div class="recipe-item">
+                <a href="https://tasty.co/recipe/easy-one-pot-mac-n-cheese" target="_blank">
+                    <img src="/img/Stovetop Mac and Cheese.jpg" alt="One-Pot Mac ‘n’ Cheese">
+                </a>
+                <div class="recipeinfo">
+                    <a href="https://tasty.co/recipe/easy-one-pot-mac-n-cheese" target="_blank">
+                        <h2>Easy One-Pot Mac ‘n’ Cheese”</h2>
+                    </a>
+                    <div class="rating">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                    </div>
+                    <p>
+                        <i class="fa-solid fa-heart"></i> 98%,
+                        <i class="fa-solid fa-clock"></i> 20 mins,
+                        <i class="fa-solid fa-leaf"></i> Vegan
+                    </p>
+                </div>
+            </div>
+
+            <!--RECIPE 6-->
+            <div class="recipe-item">
+                <a href="https://tasty.co/recipe/easy-beef-and-broccoli" target="_blank">
+                    <img src="/img/Honey Soy-Glazed Salmon Recipe by Tasty.jpg" alt="Honey Soy-Glazed Salmon">
+                </a>
+                <div class="recipeinfo">
+                    <a href="https://tasty.co/recipe/easy-beef-and-broccoli" target="_blank">
+                        <h2>Honey Soy-Glazed Salmon</h2>
+                    </a>
+                    <div class="rating">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                    </div>
+                    <p>
+                        <i class="fa-solid fa-heart"></i> 98%,
+                        <i class="fa-solid fa-clock"></i> 40 mins,
+                        <i class="fa-solid fa-fish"></i> Seafood
+                    </p>
+                </div>
+            </div>
+
+            <!--RECIPE 7-->
+            <div class="recipe-item">
+                <a href="https://tasty.co/recipe/easy-beef-and-broccoli" target="_blank">
+                    <img src="/img/Easy Beef And Broccoli Recipe by Tasty.jpg" alt="Easy Beef And Broccoli">
+                </a>
+                <div class="recipeinfo">
+                    <a href="https://tasty.co/recipe/easy-beef-and-broccoli" target="_blank">
+                        <h2>Easy Beef And Broccoli</h2>
+                    </a>
+                    <div class="rating">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                    </div>
+                    <p>
+                        <i class="fa-solid fa-heart"></i> 95%,
+                        <i class="fa-solid fa-clock"></i> 30 min,
+                        <i class="fa-solid fa-drumstick-bite"></i> Non-vegan
+                    </p>
+                </div>
+            </div>
+
+            <!--RECIPE 8-->
+            <div class="recipe-item">
+                <a href="https://tasty.co/recipe/one-bowl-chocolate-chip-banana-bread" target="_blank">
+                    <img src="/img/One Bowl Chocolate Chip Banana Bread Recipe by Tasty.jpg"
+                        alt="Chocolate Chip Banana Bread">
+                </a>
+                <div class="recipeinfo">
+                    <a href="https://tasty.co/recipe/one-bowl-chocolate-chip-banana-bread" target="_blank">
+                        <h2>Chocolate Chip Banana Bread</h2>
+                    </a>
+                    <div class="rating">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <p>
+                        <i class="fa-solid fa-heart"></i> 99%,
+                        <i class="fa-solid fa-clock"></i> 1 hr 15 min,
+                        <i class="fa-solid fa-leaf"></i> Vegan
+                    </p>
+                </div>
+            </div>
+
+            <!--RECIPE 9-->
+            <div class="recipe-item">
+                <a href="https://tasty.co/recipe/puff-pastry-salmon-salmon-wellington" target="_blank">
+                    <img src="/img/Puff Pastry Salmon (Salmon Wellington) Recipe by Tasty.jpg"
+                        alt="Puff Pastry Salmon (Salmon Wellington)">
+                </a>
+                <div class="recipeinfo">
+                    <a href="https://tasty.co/recipe/puff-pastry-salmon-salmon-wellington" target="_blank">
+                        <h2>Puff Pastry Salmon (Salmon Wellington)</h2>
+                    </a>
+                    <div class="rating">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                    </div>
+                    <p>
+                        <i class="fa-solid fa-heart"></i> 97%,
+                        <i class="fa-solid fa-clock"></i> 45 mins,
+                        <i class="fa-solid fa-fish"></i> Seafood
+                    </p>
+                </div>
+            </div>
+
+            <!--RECIPE 10-->
+            <div class="recipe-item">
+                <a href="https://tasty.co/recipe/korean-style-bbq-beef" target="_blank">
+                    <img src="/img/Korean-Style BBQ Beef Recipe by Tasty.jpg" alt="Korean-Style BBQ Beef">
+                </a>
+                <div class="recipeinfo">
+                    <a href="https://tasty.co/recipe/korean-style-bbq-beef" target="_blank">
+                        <h2>Korean-Style BBQ Beef</h2>
+                    </a>
+                    <div class="rating">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <p>
+                        <i class="fa-solid fa-heart"></i> 97%,
+                        <i class="fa-solid fa-clock"></i> 1 hr 10 min,
+                        <i class="fa-solid fa-drumstick-bite"></i> Non-vegan
+                    </p>
+                </div>
+            </div>
+
+            <!--RECIPE 11-->
+            <div class="recipe-item">
+                <a href="https://tasty.co/recipe/scalloped-potatoes" target="_blank">
+                    <img src="/img/Scalloped Potatoes Recipe by Tasty.jpg" alt="Scalloped Potatoes">
+                </a>
+                <div class="recipeinfo">
+                    <a href="https://tasty.co/recipe/scalloped-potatoes" target="_blank">
+                        <h2>Scalloped Potatoes</h2>
+                    </a>
+                    <div class="rating">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <p>
+                        <i class="fa-solid fa-heart"></i> 97%,
+                        <i class="fa-solid fa-clock"></i> 1 hr 20 min,
+                        <i class="fa-solid fa-leaf"></i> Vegan
+                    </p>
+                </div>
+            </div>
+
+            <!--RECIPE 12-->
+            <div class="recipe-item">
+                <a href="https://tasty.co/recipe/chili-lime-baked-tilapia-with-avocado-crema" target="_blank">
+                    <img src="/img/Chili Lime Baked Tilapia With Avocado Crema Recipe by Tasty.jpg"
+                        alt="Chili Lime Baked Tilapia With Avocado Crema">
+                </a>
+                <div class="recipeinfo">
+                    <a href="https://tasty.co/recipe/chili-lime-baked-tilapia-with-avocado-crema" target="_blank">
+                        <h2>Chili Lime Baked Tilapia With Avocado Crema</h2>
+                    </a>
+                    <div class="rating">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                    </div>
+                    <p>
+                        <i class="fa-solid fa-heart"></i> 94%,
+                        <i class="fa-solid fa-clock"></i> 30 mins,
+                        <i class="fa-solid fa-fish"></i> Seafood
+                    </p>
+                </div>
+            </div>
+
+            <!--RECIPE 13-->
+            <div class="recipe-item">
+                <a href="https://tasty.co/recipe/one-pan-honey-garlic-chicken" target="_blank">
+                    <img src="/img/One-Pan Honey Garlic Chicken Recipe by Tasty.jpg" alt="One-Pan Honey Garlic Chicken">
+                </a>
+                <div class="recipeinfo">
+                    <a href="https://tasty.co/recipe/one-pan-honey-garlic-chicken" target="_blank">
+                        <h2>Honey Garlic Chicken</h2>
+                    </a>
+                    <div class="rating">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                    </div>
+                    <p>
+                        <i class="fa-solid fa-heart"></i> 97%,
+                        <i class="fa-solid fa-clock"></i> 52 mins,
+                        <i class="fa-solid fa-drumstick-bite"></i> Non-vegan
+                    </p>
+                </div>
+            </div>
+
+            <!--RECIPE 14-->
+            <div class="recipe-item">
+                <a href="https://tasty.co/recipe/ratatouille" target="_blank">
+                    <img src="/img/Ratatouille Recipe by Tasty.jpg" alt="Ratatouille">
+                </a>
+                <div class="recipeinfo">
+                    <a href="https://tasty.co/recipe/ratatouille" target="_blank">
+                        <h2>Ratatouille</h2>
+                    </a>
+                    <div class="rating">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <p>
+                        <i class="fa-solid fa-heart"></i> 97%,
+                        <i class="fa-solid fa-clock"></i> 1 hr 35 min,
+                        <i class="fa-solid fa-leaf"></i> Vegan
+                    </p>
+                </div>
+            </div>
+
+            <!--RECIPE 15-->
+            <div class="recipe-item">
+                <a href="https://tasty.co/recipe/baked-lobster-tails" target="_blank">
+                    <img src="/img/Baked Lobster Tails Recipe by Tasty.jpg" alt="Baked Lobster Tails">
+                </a>
+                <div class="recipeinfo">
+                    <a href="https://tasty.co/recipe/baked-lobster-tails" target="_blank">
+                        <h2>Baked Lobster Tails</h2>
+                    </a>
+                    <div class="rating">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                    </div>
+                    <p>
+                        <i class="fa-solid fa-heart"></i> 97%,
+                        <i class="fa-solid fa-clock"></i> 30 mins,
+                        <i class="fa-solid fa-fish"></i> Seafood
+                    </p>
+                </div>
+            </div>
+
+            <!--RECIPE 16-->
+            <div class="recipe-item">
+                <a href="https://tasty.co/recipe/original-orange-chicken-by-panda-express" target="_blank">
+                    <img src="/img/Original Orange Chicken by Panda Express  Recipe by Tasty.jpg"
+                        alt="Orange Chicken by Panda Express">
+                </a>
+                <div class="recipeinfo">
+                    <a href="https://tasty.co/recipe/original-orange-chicken-by-panda-express" target="_blank">
+                        <h2>Orange Chicken by Panda Express</h2>
+                    </a>
+                    <div class="rating">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                    </div>
+                    <p>
+                        <i class="fa-solid fa-heart"></i> 96%,
+                        <i class="fa-solid fa-clock"></i> 1 hr 5 min,
+                        <i class="fa-solid fa-drumstick-bite"></i> Non-vegan
+                    </p>
+                </div>
+            </div>
+
+            <!--RECIPE 17-->
+            <div class="recipe-item">
+                <a href="https://tasty.co/recipe/apple-pie-from-scratch" target="_blank">
+                    <img src="/img/Apple Pie From Scratch Recipe by Tasty.jpg" alt="Homemade Apple Pie From Scratch">
+                </a>
+                <div class="recipeinfo">
+                    <a href="https://tasty.co/recipe/apple-pie-from-scratch" target="_blank">
+                        <h2>Homemade Apple Pie From Scratch</h2>
+                    </a>
+                    <div class="rating">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <p>
+                        <i class="fa-solid fa-heart"></i> 99%,
+                        <i class="fa-solid fa-clock"></i> 1 hr,
+                        <i class="fa-solid fa-leaf"></i> Vegan
+                    </p>
+                </div>
+            </div>
+
+            <!--RECIPE 18-->
+            <div class="recipe-item">
+                <a href="https://tasty.co/recipe/spice-rubbed-shrimp-tacos" target="_blank">
+                    <img src="/img/Spice-Rubbed Shrimp Tacos Recipe by Tasty.jpg" alt="Spice-Rubbed Shrimp Tacos">
+                </a>
+                <div class="recipeinfo">
+                    <a href="https://tasty.co/recipe/spice-rubbed-shrimp-tacos" target="_blank">
+                        <h2>Spice-Rubbed Shrimp Tacos</h2>
+                    </a>
+                    <div class="rating">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                    </div>
+                    <p>
+                        <i class="fa-solid fa-heart"></i> 93%,
+                        <i class="fa-solid fa-clock"></i> 30 mins,
+                        <i class="fa-solid fa-fish"></i> Seafood
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!--SHOW MORE BUTTON-->
+        <div class="show-more-container">
+            <div id="showmore">
+                Show more
+            </div>
+        </div>
+
+        <!--BOTTOM PAGE WITH THE CONTACT AND ABOUT INFO OF THE WEBSITE------------------------------->
+        <div class="bottom">
+            <!--FORM FOR THE NEWSLETTER-->
+            <form action="">
+                <img src="/img/logo.png" alt="tasty logo">
+                <h1>
+                    Get the Tasty Newsletter
+                </h1>
+                <div class="emailbox">
+                    <i class="fa-solid fa-envelope"></i>
+                    <input type="email" placeholder="Enter your email">
+                    <button type="submit">Subscribe</button>
+                </div>
+                <!--OTHER SOCIAL DETAILS-->
+                <p>
+                    This site is protected by reCAPTCHA and <br>
+                    the Google <a href="https://policies.google.com/privacy" target="_blank">Privacy Policy</a> and <a
+                        href="https://policies.google.com/terms" target="_blank">Terms of Service</a> apply.
+                </p>
+                <br>
+                <h1>
+                    Follow Tasty
+                </h1>
+                <a href="https://www.facebook.com/buzzfeedtasty/" target="_blank"><i id="fb"
+                        class="fa-brands fa-facebook"></i></a>
+                <a href="https://twitter.com/tasty" target="_blank"><i id="twt" class="fa-brands fa-x-twitter"></i></a>
+                <a href="https://www.instagram.com/buzzfeedtasty" target="_blank"><i id="inst"
+                        class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.youtube.com/buzzfeedtasty" target="_blank"><i id="yt"
+                        class="fa-brands fa-youtube"></i></a>
+                <p>
+                    &copy; 2023 BuzzFeed, Inc <br>
+                    Redesign by: Aliah Mae Ortiz
+                </p>
+            </form>
+
+            <div class="left">
+                <a href="https://apps.apple.com/us/app/tasty-recipes-cooking-videos/id1217456898?itsct=apps_box_badge&itscg=30200"
+                    target="_blank">
+                    <img id="appstore" src="/img/appstore.png" alt="download in app store">
+                </a>
+                <a href="https://play.google.com/store/apps/details?id=com.buzzfeed.tasty&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1&pli=1"
+                    target="_blank">
+                    <img id="googleplay" src="/img/gplay.png" alt="download on google play">
+                </a>
+            </div>
+        </div>
+    </section>
+    <!--END OF SECTION-->
+
+    <!--JS-->
+    <script>
+        //SHOW MORE BUTTON JS
+        //WHEN THE BUTTON IS CLICKED IT SHOWS MORE RECIPES
+        let showMoreBtn = document.querySelector('#showmore');
+        let currentItem = 6;
+
+        showMoreBtn.onclick = () => {
+            let boxes = [...document.querySelectorAll('.recipelist .recipe-item')];
+            for (let i = currentItem; i < currentItem + 3 && i < boxes.length; i++) {
+                boxes[i].style.display = 'inline-block';
+            }
+            currentItem += 3;
+
+            //IF ALL THE RECIPES ARE SHOWN THE SHOW MORE BTN DISSAPPEARS
+            if (currentItem >= boxes.length) {
+                showMoreBtn.style.display = 'none';
+            }
+        }
+    </script>
+    <!--END OF JS-->
+</body>
+
+</html>
+<!--PAGE 2 THE END-->

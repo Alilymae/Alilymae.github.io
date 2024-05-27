@@ -1,0 +1,405 @@
+/*VIDEOS PAGE STYLING*/
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: "Open Sans", sans-serif;
+    color: black;
+}
+
+/*HIDES THE SCROLLABR*/
+::-webkit-scrollbar {
+    display: none;
+}
+
+/*NAVIGATION BAR*/
+.navcon2 {
+    background-color: black;
+    width: 100%;
+    height: 8.5rem;
+    
+}
+
+.navbar2 {
+    width: 100%;
+    height: 3rem;
+    display: flex;
+    text-align: center;
+    color: white;
+    background-color: black;
+}
+
+.navbar2 ul {
+    display: flex;
+    list-style: none;
+    padding-top: 2rem;
+    justify-content: center;
+    text-align: center;
+    color: white;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 7rem;
+    text-align: center;
+    color: white;
+    background-color: black;
+}
+
+nav img {
+    align-items: left;
+    float: left;
+    margin: 2rem 5rem 0 5rem;
+}
+
+.navbar2 ul li {
+    padding-top: 1.8rem;
+    padding-right: 5rem;
+    justify-content: center;
+    text-align: center;
+    color: white;
+}
+.navbar2 button {
+    border: none;
+    background-color: black;
+}
+.navbar2 ul li a {
+    color: white;
+    font-size: 1rem;
+    background-color: black;
+}
+
+.navbar2 ul li a:hover {
+    color: #79dcf1;
+    background-color: black;
+}
+.navbar2 ul li button a{
+    background-color: #79dcf1;
+    border: 1px solid #79dcf1;
+    color: black;
+    padding: 0.5rem 1rem 0.5rem 1rem;
+    border-radius: 1rem;
+}
+.navbar2 ul li button a:hover {
+    color: white;
+    background-color: #088199;
+    border-color: #088199;
+    transition: 0.5s;
+}
+
+/*VIDEO GALLERY*/
+.maincon h1 {
+    text-align: center;
+    font-size: 3rem;
+    padding: 2rem 0 1.5rem 0;
+}
+.vidcon {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 2rem;
+    align-items: flex-start;
+    padding: 0.5rem 5%;
+}
+.vidcon .mainvid {
+    background: white;
+    border-radius: 1px;
+    padding: 1rem;
+}
+.vidcon .mainvid video {
+    width: 100%;
+    border-radius: 0.3rem;
+}
+.vidcon .mainvid h3 {
+    font-size: 1.5rem;
+    padding: 1rem 0 2rem 0;
+} 
+.vidcon .vidlist {
+    background: #e8f5f8;
+    border-radius: 0.3rem;
+    height: 28rem;
+    margin-top: 1rem;
+    overflow-y: scroll;
+    border: 1px solid black;
+}
+.vidcon .vidlist::-webkit-scrollbar {
+    width: 0.3rem;
+}
+.vidcon .vidlist::-webkit-scrollbar-track {
+   background: #79dcf1;
+   border-radius: 0.3rem;
+}
+.vidcon .vidlist::-webkit-scrollbar-thumb {
+    background: #17B9DE;
+    border-radius: 0.3rem;
+ }
+.vidcon .vidlist .video video {
+    width: 6rem;
+    border-radius: 0.5rem;
+}
+.vidcon .vidlist .video {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    background: #d4f1f8;
+    border-radius: 0.3rem;
+    margin: 1rem;
+    padding: 1rem;
+    font-size: 0.8rem;
+    border: 1px solid black;
+    cursor: pointer;
+}
+.vidcon .vidlist .video:hover {
+    background: #b2eff8;
+}
+.vidcon .vidlist .video.active {
+    background: #79dcf1;
+}
+
+/*BOTTOM PART*/
+.bottom {
+    background-color: #0a0908;
+    margin-top: 6rem;
+    padding-bottom: 5rem;
+    display: flex;
+    justify-content: center;
+    color: white;
+}
+.bottom img {
+    width: 200px;
+    margin: 5rem 0 2rem 8rem;
+}
+form h1 {
+    font-size: 1.7rem;
+    margin-left: 8rem;
+    color: white;
+}
+.emailbox i {
+    color: #79dcf1;
+    margin: 0 0 0 8rem;
+    font-size: 1.4rem;
+}
+.emailbox input {
+    font-size: 1.1rem;
+    color: black;
+    padding: 0.35rem;
+    padding-right: 1rem;
+    border: none;
+    outline: none;
+    border-radius: 0.5rem;
+    margin: 0.5rem;
+}
+.emailbox button {
+    font-size: 1rem;
+    color: black;
+    border: none;
+    padding: 0.45rem;
+    cursor: pointer;
+    border-radius: 0.5rem;
+    background-color: #79dcf1;
+}
+.emailbox button:hover {
+    background-color: #088199;
+}
+.bottom p {
+    font-size: 0.8rem;
+    margin: 0.5rem 0 0 8rem;
+    color: white;
+}
+.bottom p a {
+    color: #79dcf1;
+}
+.bottom p a:hover {
+    color: #088199;
+}
+.bottom h1 {
+    margin: 1rem 0 1rem 8rem;
+}
+.bottom i {
+    font-size: 2rem;
+    color: #79dcf1;
+}
+#fb {
+    margin-left: 8rem;
+}
+#twt, #inst, #yt {
+    margin-left: 1.5rem;
+}
+#appstore {
+    float: right;
+    width: 200px;
+    margin-right: 7rem;
+    margin-top: 7rem;
+}
+#googleplay {
+    float: right;
+    width: 200px;
+    margin-top: 7rem;
+}
+.left p {
+    font-size: 1rem;
+    text-align: right;
+    margin-right: 7rem;
+}
+.left p:hover {
+    color: #79dcf1;
+}
+
+
+/*RESIZING SCREENS*/
+/*I HATE THIS PART FR*/
+@media (max-width: 991px) /*SMALL SCREEN*/{
+
+    .navbar2 {
+        flex-direction: column;
+        height: auto;
+        align-items: center;
+        padding: 0 2rem;
+    }
+
+    .nav {
+        flex-direction: column;
+        margin-top: 1rem;
+    }
+
+    nav img {
+        width: 5rem;
+        margin: 0 auto;
+        padding: 2rem 0.3rem 0 0;
+    }
+
+    .navbar2 ul li {
+        padding-top: 0.5rem;
+        padding-right: 1rem;
+    }
+
+    .navbar ul li a {
+        font-size: 0.8rem;
+        margin: 1 auto;
+    }
+
+    .vidcon {
+        grid-template-columns: 1.5fr 1fr;
+        padding: 0.3rem;
+    }
+
+    #appstore {
+        float: right;
+        width: 100px;
+        margin-right: 2rem;
+        margin-top: 7rem;
+    }
+
+    #googleplay {
+        float: right;
+        width: 130px;
+        margin-top: 7rem;
+        padding-right: 2rem;
+    }
+
+    .bottom img {
+        width: 150px;
+        margin: 5rem 0 2rem 8rem;
+    }
+
+    .emailbox input {
+        font-size: 0.8rem;
+        color: black;
+        padding: 0.35rem;
+        padding-right: 1rem;
+        border: none;
+        outline: none;
+        border-radius: 0.5rem;
+        margin: 0.5rem;
+        width: 5rem;
+    }
+
+    .emailbox button {
+        font-size: 0.8rem;
+        color: black;
+        border: none;
+        padding: 0.45rem;
+        cursor: pointer;
+        border-radius: 0.5rem;
+        background-color: #79dcf1;
+    }
+}
+@media (max-width: 768px) /*SMALLER SCREEN*/{
+
+    .vidcon {
+        grid-template-columns: 1fr;
+    }
+    .navbar2 ul li a { 
+        font-size: 0.9rem; 
+    }
+}
+
+@media (max-width: 480px) /*SMALLEST SCREEN*/ { 
+    .navbar2 ul li a { 
+        font-size: 0.7rem; 
+    } 
+
+    .bottom {
+        background-color: #0a0908;
+        padding-left: 6rem;
+        padding-bottom: 5rem;
+        display: flex;
+        justify-content: center;
+        color: white;
+        text-align: center;
+    }
+
+    #appstore {
+        display: none;
+    }
+
+    #googleplay {
+        align-items: right;
+        width: 80px;
+        padding-right: 5rem;
+        margin-top: 7rem;
+    }
+
+    .emailbox i {
+        color: #79dcf1;
+        font-size: 0.8rem;
+    }
+
+    .emailbox input {
+        font-size: 0.5rem;
+        color: black;
+        padding: 0.3rem;
+        border: none;
+        outline: none;
+        border-radius: 0.5rem;
+        width: 3rem;
+    }
+
+    .emailbox button {
+        font-size: 0.5rem;
+        color: black;
+        border: none;
+        padding: 0.3rem;
+        cursor: pointer;
+        border-radius: 0.5rem;
+        background-color: #79dcf1;
+    }
+    #fb {
+        padding-left: 0.5rem;
+        font-size: 0.5rem;
+    }
+    #twt, #inst, #yt {
+        padding-left: 0.5rem;
+        font-size: 0.5rem;
+    }
+
+    .left a img{
+        align-items: right;
+        display: flex;
+        justify-content: center;
+    }
+}
+/*THE END*/
